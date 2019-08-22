@@ -1,0 +1,52 @@
+
+<ion-content>
+  <div id="marlboroLogo"><img src="../assets/images/marlboroLogo.png" alt="" /></div>
+  <div class="ctrBox">
+      <div class="introTxt">
+
+     
+         <div class="heading">
+           <div class="strapLeft"></div>
+             <div class="title">Tombola</div>
+           <div class="strapRight"></div>
+         </div>
+          
+        <div id="formContainer">
+            <form #form="ngForm" (ngSubmit)="new(form)" method="post">
+                <label>Nom complet</label>
+                <input type="text" ngModel name="fName" value="" class="champMe"/>
+
+                <label>Numéro de téléphone</label>
+                <input type="text"ngModel  name="phone" value="" class="champMe"/>
+                
+                
+                
+                <div class="contBtns_inline">
+                    <ion-button type="submit" expand="full" color="danger" class="btnMe">JE PARTICIPE</ion-button>
+                </div>  
+
+                
+
+
+               
+
+
+            </form>
+        </div>
+
+         
+
+      </div>
+    
+  </div>
+  <div id="decideGraphic" class="bottom"><img src="../assets/images/decide_graphic.png" alt=""/></div>
+</ion-content>
+
+
+<ion-footer class="txtCenter">
+<ion-toolbar>
+<ion-title>Fumer tue</ion-title>
+</ion-toolbar>
+</ion-footer>
+
+

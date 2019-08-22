@@ -1,0 +1,68 @@
+<ion-content>
+    <div id="marlboroLogo"><img src="../assets/images/marlboroLogo.png" alt="" /></div>
+    <!-- <div class="ctrBox"> -->
+    <div class="spacer-40"></div>
+    <div class="heading">
+      <div class="strapLeft"></div>
+        <div class="title">Tirage au sort</div>
+      <div class="strapRight"></div>
+    </div>
+
+    <div class="subTitle_headline">{{messageavant}}</div>
+    <div id="wheelBox">
+      <img src="../assets/images/canvas.png" alt=""/>
+      <img id="rotator" src="../assets/images/rotator.png" alt=""/>
+    </div>
+              
+      <div id="action">
+        <div class="spacer-20"></div>
+        <div class="contBtns_inline">
+          <div class="btnMe" ><a href="#" title="" (click)="doTirage()">{{btnVal}}</a></div>
+        </div> 
+      </div>
+
+      <div id="winnerInfos">
+        <div class="spacer-30"></div>
+        <div class="infosUser"><ion-icon ios="ios-person" md="md-person"></ion-icon>{{Winner.name}}</div>
+        <div class="infosUser"><ion-icon ios="ios-call" md="md-call"></ion-icon>{{Winner.phone}}</div>
+        <div class="infosUser"><ion-icon ios="ios-locate" md="md-locate"></ion-icon>{{Winner.city}}</div>
+      </div>
+      <div id="afterTirage_action">
+        <div class="contBtns_inline">
+                  <!--<div class="btnMe"><a href="" title="" (click)="reload()">Refaire le tirage</a></div>-->
+          <div class="btnMe" ><a href="" title="" (click)="goHome()">Terminer</a></div>
+        </div> 
+      </div>
+      <!-- </div> -->
+      <div id="decideGraphic" class="bottom"><img src="../assets/images/decide_graphic.png" alt=""/></div>
+    </ion-content>
+    <ion-footer class="txtCenter">
+      <ion-toolbar>
+        <ion-title>Fumer tue</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+    
+    
+
+
+
+
+
+
+
+
+<!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>Tu Décides. </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+    <ion-button (click)="Compte()" expand="full" color="primary">Register</ion-button>
+  </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-title>Fumer tue</ion-title>
+    </ion-toolbar>
+  </ion-footer> -->

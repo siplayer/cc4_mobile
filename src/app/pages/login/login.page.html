@@ -1,0 +1,197 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-button color="light" (click)="dismissLogin()">Close</ion-button>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input ngModel type="email" name="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input ngModel type="password" name="password"></ion-input>
+    </ion-item>
+  
+    <p text-right>Forgot Password?</p>
+  
+    <ion-button type="submit" expand="full" color="primary">Login</ion-button>
+  </form>
+</ion-content> -->
+
+
+
+<!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>Tu Décides. </ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-content>
+      <div id="marlboroLogo"><img src="../assets/images/marlboroLogo.png" alt="" /></div>
+      <div class="ctrBox">
+        
+    
+         
+             <div class="heading">
+               <div class="strapLeft"></div>
+                 <div class="title">S'identifier</div>
+               <div class="strapRight"></div>
+             </div>
+              
+            <div id="formContainer">
+                <form  [formGroup]="loginForm" (ngSubmit)="onFormSubmit(loginForm.value)">
+                    <label>E-mail</label>
+                    <input type="text" formControlName="username" class="champMe"/>
+
+                    <label>Password</label>
+                    <input type="password" formControlName="password" class="champMe"/>
+                    
+                    <!--<label>Ville</label>
+                    <select name="city" class="champMe">
+                        <option value=""></option>
+                        <option value="kelâat Esraghna">Agadir</option>
+                        <option value="kelâat Esraghna">Aghram</option>
+                        <option value="kelâat Esraghna">Ain châir</option>
+                        <option value="kelâat Esraghna">Akka</option>
+                        <option value="kelâat Esraghna">Aknoul</option>
+                        <option value="kelâat Esraghna">Alhoceima</option>
+                        <option value="kelâat Esraghna">Araich</option>
+                        <option value="kelâat Esraghna">Arbaoua</option>
+                        <option value="kelâat Esraghna">Arfoud</option>
+                        <option value="kelâat Esraghna">Assa</option>
+                        <option value="kelâat Esraghna">Assila</option>
+                        <option value="kelâat Esraghna">Azemour</option>
+                        <option value="kelâat Esraghna">Azilal</option>
+                        <option value="kelâat Esraghna">Azrou</option>
+                        <option value="kelâat Esraghna">Ben slimane</option>
+                        <option value="kelâat Esraghna">Bengrire</option>
+                        <option value="kelâat Esraghna">Beni Mellal</option>
+                        <option value="kelâat Esraghna">Berkane</option>
+                        <option value="kelâat Esraghna">Berrchid</option>
+                        <option value="kelâat Esraghna">Boujdour</option>
+                        <option value="kelâat Esraghna">Boulemane</option>
+                        <option value="kelâat Esraghna">Bourd</option>
+                        <option value="kelâat Esraghna">Boutagit</option>
+                        <option value="kelâat Esraghna">Bouznika</option>
+                        <option value="kelâat Esraghna">Bouâarfa</option>
+                        <option value="kelâat Esraghna">Bouânane</option>
+                        <option value="kelâat Esraghna">Casablanca</option>
+                        <option value="kelâat Esraghna">Chefchaouan</option>
+                        <option value="kelâat Esraghna">Dakhla</option>
+                        <option value="kelâat Esraghna">Demnat</option>
+                        <option value="kelâat Esraghna">Eljadida</option>
+                        <option value="kelâat Esraghna">Errachidia</option>
+                        <option value="kelâat Esraghna">Essaouira</option>
+                        <option value="kelâat Esraghna">Feguig</option>
+                        <option value="kelâat Esraghna">Fes</option>
+                        <option value="kelâat Esraghna">Gelmim</option>
+                        <option value="kelâat Esraghna">Guelmima</option>
+                        <option value="kelâat Esraghna">Guersif</option>
+                        <option value="kelâat Esraghna">Hajb</option>
+                        <option value="kelâat Esraghna">Ifrane</option>
+                        <option value="kelâat Esraghna">Imouzar Kandar</option>
+                        <option value="kelâat Esraghna">Jrada</option>
+                        <option value="kelâat Esraghna">Kalâa Megouna </option>
+                        <option value="kelâat Esraghna">Kesbat Tadla</option>
+                        <option value="kelâat Esraghna">Khouribga</option>
+                        <option value="kelâat Esraghna">Khémissat</option>
+                        <option value="kelâat Esraghna">Khénifra</option>
+                        <option value="kelâat Esraghna">Kénitra</option>
+                        <option value="kelâat Esraghna">Laayoune</option>
+                        <option value="kelâat Esraghna">Lagouira</option>
+                        <option value="kelâat Esraghna">Laksar lakbire</option>
+                        <option value="kelâat Esraghna">Lgara</option>
+                        <option value="kelâat Esraghna">Meknes</option>
+                        <option value="kelâat Esraghna">Melilla</option>
+                        <option value="kelâat Esraghna">Menzal beni yazgha</option>
+                        <option value="kelâat Esraghna">Merrakech</option>
+                        <option value="kelâat Esraghna">Meskoura</option>
+                        <option value="kelâat Esraghna">Midelet</option>
+                        <option value="kelâat Esraghna">Missour</option>
+                        <option value="kelâat Esraghna">Mohammedia</option>
+                        <option value="kelâat Esraghna">Moulay Bouâaza</option>
+                        <option value="kelâat Esraghna">Moulay Yaâgoub</option>
+                        <option value="kelâat Esraghna">Nador</option>
+                        <option value="kelâat Esraghna">Ouazane</option>
+                        <option value="kelâat Esraghna">Oued Amlil</option>
+                        <option value="kelâat Esraghna">Oued Zam</option>
+                        <option value="kelâat Esraghna">Oued zam</option>
+                        <option value="kelâat Esraghna">Ouerzazat</option>
+                        <option value="kelâat Esraghna">Oujda</option>
+                        <option value="kelâat Esraghna">Rabat</option>
+                        <option value="kelâat Esraghna">Remani</option>
+                        <option value="kelâat Esraghna">Rich</option>
+                        <option value="kelâat Esraghna">Rissani</option>
+                        <option value="kelâat Esraghna">Safi</option>
+                        <option value="kelâat Esraghna">Salé</option>
+                        <option value="kelâat Esraghna">Sebta</option>
+                        <option value="kelâat Esraghna">Sefrou</option>
+                        <option value="kelâat Esraghna">Settat</option>
+                        <option value="kelâat Esraghna">Sidi Ifni</option>
+                        <option value="kelâat Esraghna">Sidi Slimane</option>
+                        <option value="kelâat Esraghna">Sidi kacém</option>
+                        <option value="kelâat Esraghna">Sidi yahya lgharb</option>
+                        <option value="kelâat Esraghna">Smara</option>
+                        <option value="kelâat Esraghna">Souq Arbiâ Gharb</option>
+                        <option value="kelâat Esraghna">Tafraout</option>
+                        <option value="kelâat Esraghna">Talouine</option>
+                        <option value="kelâat Esraghna">Tandit</option>
+                        <option value="kelâat Esraghna">Tanger</option>
+                        <option value="kelâat Esraghna">Tantan</option>
+                        <option value="kelâat Esraghna">Taounat</option>
+                        <option value="kelâat Esraghna">Taourirt</option>
+                        <option value="kelâat Esraghna">Taroudent</option>
+                        <option value="kelâat Esraghna">Tata</option>
+                        <option value="kelâat Esraghna">Taza</option>
+                        <option value="kelâat Esraghna">Tehla</option>
+                        <option value="kelâat Esraghna">Terfaya</option>
+                        <option value="kelâat Esraghna">Tetouan</option>
+                        <option value="kelâat Esraghna">Tiflet</option>
+                        <option value="kelâat Esraghna">Tinjdad</option>
+                        <option value="kelâat Esraghna">Tissa</option>
+                        <option value="kelâat Esraghna">Tizi ousli</option>
+                        <option value="kelâat Esraghna">Tiznit</option>
+                        <option value="kelâat Esraghna">Youssoufia</option>
+                        <option value="kelâat Esraghna">Zag</option>
+                        <option value="kelâat Esraghna">Zagoura</option>
+                        <option value="kelâat Esraghna">Zerhoune</option>
+                        <option value="kelâat Esraghna">kelâat Esraghna</option>
+                    </select>    
+                    -->
+                    
+                    <div class="contBtns_inline">
+                        <ion-button  shape="round" color="danger" type="submit" [disabled]="!loginForm.valid">Valider</ion-button>
+                        <!--<div class="btnMe"><a href="#" title="" (click)="clickedPlay()">Valider</a></div>-->
+                    </div>  
+
+                    <span class="spacer-20"></span>
+
+
+                </form>
+            </div>
+
+              <!-- <div class="largeBtn">
+                  <label>Je ne participe pas à la tombola</label>
+                  <a href="#" title="" (click)="clickedCompte(3)">Sans enregistrement</a>
+              </div> -->
+
+             
+    
+      
+        
+      </div>
+      <div id="decideGraphic" class="bottom"><img src="../assets/images/decide_graphic.png" alt=""/></div>
+    </ion-content>
+    
+    
+    <ion-footer class="txtCenter">
+      <ion-toolbar>
+        <ion-title>Fumer tue</ion-title>
+      </ion-toolbar>
+    </ion-footer>
+    
+    

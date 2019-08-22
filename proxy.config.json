@@ -1,0 +1,10 @@
+{
+   "name": "proxy-cc4",
+   "app_id": "",
+   "proxies": [
+     {
+       "path": "/api/",
+       "proxyUrl": "http://165.22.221.131/cc4/index.php?"
+     }
+   ]
+ }

@@ -1,0 +1,8 @@
+{
+  "name": "cc_v1",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "5fa438c9"
+}

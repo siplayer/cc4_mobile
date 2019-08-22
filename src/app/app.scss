@@ -1,0 +1,427 @@
+// App Styles
+// ----------------------------------------------------------------------------
+// Put style rules here that you want to apply to the entire application. These 
+// styles are for the entire app and not just one component. Additionally, this 
+// file can hold Sass mixins, functions, and placeholder classes to be imported 
+// and used throughout the application.
+
+
+@import "../../node_modules/compass-sass-mixins/lib/compass";
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.ion-page{
+    background:#fff url('../assets/images/bg_body.png');
+}
+
+#decideGraphic{
+    height:auto;
+    margin:0;
+    padding:0;
+    display:block;
+    margin:10px auto 0 auto;
+    width:100px;
+    &.bottom{
+        position:absolute;
+        bottom: 30px;
+        right:20px;
+    }
+    img{
+        width:100%;
+        vertical-align: top;
+        margin:0;
+        padding:0;
+    }
+}
+
+.contBtns{
+    margin:0 auto;
+    text-align:center;
+    padding:0;
+    padding:5px;
+    @include box-sizing(border-box);
+.btn_gradient{
+    height:auto;
+    width:auto;
+    display:inline-block;
+    margin:0;
+    margin:10px auto 10px auto;
+    padding:8px;
+    text-align: center;
+    @include box-sizing(border-box);
+    @include border-radius(10px);
+    @include background-image(linear-gradient(to right,#fabf41, #eb2541));
+    a{
+        height:auto;
+        width: 100%;
+        background:#eb2541;
+        text-decoration:none;
+        margin:0;
+        padding:0;
+        display: block;
+        border:3px solid #fff;
+        text-decoration:none;
+        font-size:25px;
+        color:#fff;
+        padding:10px;
+        @include box-sizing(border-box);
+        @include border-radius(8px);
+    }
+}
+}
+
+
+#warriorVisual{
+    width:130px;
+    margin:0 auto;
+    padding:20px 0 0 0;
+    display: block;
+    img{
+        vertical-align: top;
+        margin:0;
+        padding:0;
+        width: 100%;
+    }
+}
+
+.ctrBox{
+    position:absolute;
+    width: 100%;
+    top:50%;
+    left:50%;
+    @include translate(-50%, -50%);
+}
+
+.txtCenter{
+    text-align: center;
+}
+
+#marlboroLogo{
+    height:auto;
+    width: 50px;
+    margin:20px auto 0 auto;
+    img{
+        width:100%;
+        vertical-align: top;
+        margin:0;
+        padding:0;
+    }
+}
+
+
+.introTxt{
+    font-size: 35px;
+    padding:10px;
+    text-align: center;
+    @include box-sizing(border-box);
+    .redColor{
+        color:#af0000;
+    }
+}
+
+
+.contBtns_inline{
+    margin:0 auto;
+    text-align:center;
+    padding:0;
+    padding:5px;
+    @include box-sizing(border-box);
+    .btnMe{
+        display: inline-block;
+        margin:0;
+        padding: 0;
+        color: #fff;
+        font-size: 20px;
+        margin:0 5px;
+        text-align: center;
+        a{
+            display:block;
+            margin:0;
+            padding:0;
+            color:#fff;
+            background: #af0000;
+            padding:5px 20px;
+            @include box-sizing(border-box);
+            text-decoration: none;
+            @include border-radius(8px);
+            text-transform:uppercase;
+        }
+    }
+
+    .largeBtn{
+        display: inline-block;
+        margin:0;
+        padding: 0;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        width:80%;
+        margin-bottom:30px;
+        a{
+            display:block;
+            margin:0;
+            padding:0;
+            color:#fff;
+            background: #af0000;
+            padding:5px 20px;
+            @include box-sizing(border-box);
+            text-decoration: none;
+            @include border-radius(8px);
+            text-transform:uppercase;
+        }  
+        label{
+            display:block;
+            text-align:left;
+            margin:0;
+            padding:0;
+            color:#2b2b2b;
+            font-size:15px;
+            padding:0 0 5px 0;
+            text-transform: uppercase;
+        }  
+    }
+
+
+}
+
+
+
+#paquet{
+    height:auto;
+    margin:0;
+    padding:0;
+    display:block;
+    margin:0 auto 0 auto;
+    width:320px;
+    position:relative;
+    img{
+        width:100%;
+        vertical-align: top;
+        margin:0;
+        padding:0;
+    }
+    #question{
+        width:60%;
+        height:auto;
+        display:block;
+        position: absolute;
+        left:0;
+        top:0;
+        color:#fff;
+        padding:25px 0 0 25px;
+        @include box-sizing(border-box);
+    }
+    #answer{
+        width:40%;
+        height:auto;
+        display:block;
+        position: absolute;
+        right:0;
+        top:0;
+        text-align: center;
+        padding:20px 0 0 0;
+        #interactUser{
+            height:90px;
+            width:90px;
+            background:green;
+            margin:0 auto;
+            @include border-radius(100px);
+            position: relative;
+            background: #fff url("../assets/images/gradientResponse.png") left top / cover no-repeat;
+            span{
+                position: absolute;
+                top:50%;
+                width:100%;
+                left:50;
+                text-align: center;
+                font-weight:bold;
+                color:#000;
+                font-size:20px;
+                display:none;
+                @include translate(-50%, -50%);
+            }
+        }
+    }    
+}
+
+
+.heading{
+    width: 100%;
+    margin: 0;
+    padding:0;
+    display:block;
+    font-size:0;
+    height: auto;
+    margin:0 0 20px 0;
+    .strapLeft, .strapRight{
+        width:30%;
+        height:6px;
+        display: inline-block;
+        vertical-align: middle;
+        @include background-image(linear-gradient(to right,#fabf41, #eb2541));
+    }
+    .title{
+        width:40%;
+        height:auto;
+        display: inline-block;
+        font-size:30px;
+        color:#af0000;
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: middle;  
+    }
+}
+
+#formContainer{
+    width: 80%;
+    margin:0;
+    padding:0;
+    margin:0 auto;
+    input.champMe, select.champMe{
+        border:3px solid #af0000;
+        outline:none;
+        margin:0;
+        padding:0;
+        padding:8px 5px;
+        display: block;
+        @include box-sizing(border-box);
+        font-size:20px;
+        width:100%;
+        margin:0 0 20px 0;
+        @include border-radius(5px);
+    }
+    label{
+        text-align: left;
+        display: block;
+        font-size:16px;
+        color:#2b2b2b;
+        text-transform: uppercase;
+        padding:0 0 4px 0;
+    }
+    --background{
+        background:yellow;
+    }
+    .checkBox{
+        ion-label{
+            margin-left: 10px !important;
+        }
+        ion-checkbox{
+             --background-checked:#af0000;
+             --border-color-checked ::#af0000;
+           }
+    }
+}
+
+@for $i from 1 through 100 {
+    .spacer-#{$i} {
+        height: #{$i}px;
+        width: 100%;
+        display:block;
+    }
+}
+
+#thankxBox{
+    margin:0;
+    padding:0;
+    display: block;
+    margin:0 auto;
+    width:320px;
+    img{
+        width:100%;
+        vertical-align: top;
+        margin:0;
+        padding:0;
+    }
+}
+
+
+.divider{
+    width:70%;
+    height:6px;
+    display:block;
+    margin:35px auto 30px auto;
+    @include background-image(linear-gradient(to right,#fabf41, #eb2541));
+}
+
+.subTitle_headline{
+    width: 100%;
+    display: block;
+    padding:5px 10px;
+    text-align: center;
+    font-size:25px;
+    color:#2b2b2b;
+}
+
+#wheelBox{
+    width:300px;
+    margin:0;
+    padding:0;
+    display:block;
+    margin:30px auto 0 auto;
+    position:relative;
+    // background:red;
+    img{
+        width: 100%;
+        margin:0;
+        padding:0;
+        vertical-align: top;
+        z-index: 2;
+        position:relative;
+    }
+    img#rotator{
+        width: 87%;
+        margin:0;
+        padding:0;
+        vertical-align: top;
+        position: absolute;
+        top:19px;
+        left:50%;
+        z-index: 1;
+        position:absolute;
+        @include translate(-50%, 0);
+    }
+}
+
+#winnerInfos{
+    width: 70%;
+    margin:0;
+    padding:0;
+    display:block;
+    text-align: center;
+    font-size:27px;
+    margin:0 auto;
+    .infosUser{
+        margin:0;
+        padding: 0;
+        padding:10px 18px;
+        display: none;
+        @include box-sizing(border-box);
+        background:#e21326;
+        margin:0 auto 7px auto;
+        color:#fff;
+        position: relative;
+        &:nth-child(2n){
+            @include border-radius(6px 6px 0 0);
+        }
+        &:last-child{
+            @include border-radius(0 0 6px 6px);
+        }     
+        ion-icon{
+            position:absolute;
+            left:10px;
+            top:13px;
+        }   
+    }
+}
+
+
+#afterTirage_action{
+    display:none;
+    padding-top:50px;
+}
+
+
